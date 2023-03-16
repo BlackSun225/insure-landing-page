@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+}
+.logo {
+  width: 100px;
+}
+ul {
+  list-style-type: none;
+  font-family: "Karla",serif;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+.desk a {
+  color: hsl(273, 4%, 51%);
+}
+.desk a:hover {
+  color: hsl(256, 26%, 20%); 
+}
+.desk li {
+  margin-left: 1.5rem;
+}
+li .btn {
+  color: hsl(256, 26%, 20%);
+  padding: 0.5rem 1.2rem;
+  border: 2px solid hsl(256, 26%, 20%);
+}
+li .btn:hover {
+  color: white;
+  background:hsl(256, 26%, 20%);
+}
+.btn {
+  display: inline-block;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 1.5rem;
+  font-family: "Karla",serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.btn:hover {
+  color:hsl(256, 26%, 20%);
+  background: white;
+}
+header {
+  width: 100%;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+#top {
+  width: 100%;
+  background:hsl(256, 26%, 20%);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+h1 {
+  color: white;
+  letter-spacing: 2px;
+  margin: 1rem 0;
+}
+#top p {
+  font-family: "Karla", serif;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  width: 95%;
+}
+header > img.desk {
+  position: absolute;
+}
+h2 {
+  font-size: 3rem;
+  color: hsl(270, 9%, 17%);
+  margin: 1.5rem 0;
+}
+.box img {
+  display: block;
+  width: 20%;
+}
+.box h3 {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+.box p {
+  font-family: "Karla", serif;
+  color:hsl(273, 4%, 51%);
+  line-height: 1.5rem;
+}
+#more {
+  width: 100%;
+  background-size: contain;
+  margin: 6rem 0;
+}
+#more h2 {
+  color: white;
+  line-height: 3rem;
+}
+footer {
+  background-position: left top;
+}
+footer > div:first-child {
+  border-bottom: 1px solid hsl(273, 4%, 51%);
+  margin-bottom: 1rem;
+}
+.social i {
+  font-size: 1.5rem;
+  color: hsl(273, 4%, 51%);
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.social i:hover {
+  color:hsl(270, 9%, 17%);
+}
+footer li {
+  margin: 0.75rem 0;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+footer li:hover {
+  text-decoration: underline;
+}
+footer li.h {
+  color: hsl(273, 4%, 51%);
+  margin: 1.5rem 0;
+}
+
+@media screen and (min-width:930px) {
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+.mob {
+  display: none;
+}
+nav {
+  width: 100%;
+  padding: 1.2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .desk {
+  width: 70%;
+}
+.desk ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.8rem;
+}
+  #top {
+    padding: 0 6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #top > div:first-child {
+    width: 50%;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  #top img {
+    width: 50%;
+    height: auto;
+    transform: translateY(10%);
+  }
+  #top .btn {
+    margin-top: 1.5rem;
+  }
+  #decoT{
+    width: 6rem;
+    height: 1px;
+    background: hsl(0, 0%, 98%);
+  }
+  #decoT {
+    margin-bottom: 2rem;
+  }
+  header .tpri {
+    right: 0;
+    top: 0;
+    transform: translate(0%,-14%);
+    width: 33%;
+  }
+  .lft {
+    position: absolute;
+    left: 0;
+    top: 97vh;
+    width: 9%;
+  }
+  #decoB {
+    margin-top: 11rem;
+    margin-left: 6rem;
+    width: 6rem;
+    height: 1px;
+    background: hsl(273, 4%, 51%);
+  }
+  section {
+    padding: 0 6rem;
+  }
+  #advtg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem 0;
+  }
+  .box {
+    width: 30%;
+  }
+  #more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background:hsl(256, 26%, 20%) url("images/bg-pattern-how-we-work-desktop.svg") no-repeat;
+    background-position: right center;
+  }
+  #more h2 {
+    width: 44%;
+  }
+  footer {
+    padding: 2.5rem 6rem;
+    background: hsl(0, 0%, 98%) url("images/bg-pattern-footer-desktop.svg") no-repeat;
+  }
+  footer > div:first-child {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer > div:last-child {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  footer ul {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:929px) {
+  .desk {
+    display: none;
+  }
+  main {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  nav {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .close {
+    display: none;
+  }
+  nav img {
+    cursor: pointer;
+    width: 2rem;
+  }
+  nav .menu {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    max-height: 800px;
+    background:hsl(270, 9%, 17%) url("images/bg-pattern-mobile-nav.svg") no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+    padding: 3rem 1.5rem;
+  }
+  nav .menu p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Karla", serif;
+    font-weight: 700;
+  }
+  .menu a {
+    color: white;
+  }
+  .menu .btn {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+  }
+  header {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+  }
+  header > img {
+    width: 100%;
+  }
+  #top {
+    padding: 5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-image: url("images/bg-pattern-intro-left-mobile.svg");
+    background-position: left top;
+  }
+  h1 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+  }
+  h1, #top p {
+    text-align: center;
+    width: 100%;
+  }
+  #top .btn {
+    display: block;
+    width: 50%;
+    min-width: 120px;
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+  header img:last-of-type {
+    position: absolute;
+    right: 0;
+    top: 75%;
+    width: 30%;
+  }
+  #decoB {
+    margin-top: 8rem;
+    width: 40%;
+    height: 1px;
+    background: hsl(273, 4%, 51%);
+  }
+  section {
+    padding: 0 1.5rem;
+  }
+  section h2 {
+    text-align: center;
+  }
+  .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .box img {
+    margin: 1rem 0;
+  }
+  .box p {
+    text-align: center;
+  }
+  #more {
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:hsl(256, 26%, 20%) url("images/bg-pattern-how-we-work-mobile.svg") no-repeat;
+    background-position: right top;
+  }
+  #more h2 {
+    margin-top: 0;
+  }
+  footer {
+    padding: 5rem 1.5rem;
+    background: hsl(0, 0%, 98%) url("images/bg-pattern-footer-mobile.svg") no-repeat;
+  }
+  footer > div:first-child {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer img {
+    margin-bottom: 1.5rem;
+  }
+  footer li {
+    text-align: center;
+  }
+}
